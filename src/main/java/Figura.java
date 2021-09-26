@@ -49,10 +49,21 @@ public abstract class Figura implements Dibujable, Comparable<Figura>
 
     //Metodos Override
 
-    @Override
+    //COMPARATORS
+
     public int compareTo(Figura o)
     {
-        return this.compareTo(o);
+        return (int) (this.area()-o.area());
+    }
+
+    public int comparePerimetro(Figura o)
+    {
+        return (int) (this.perimetro()-o.perimetro());
+    }
+
+    public int compareDistancia(Figura o)
+    {
+        return (int) (this.distancia(o)-o.distancia(this));
     }
 
     @Override
@@ -65,9 +76,6 @@ public abstract class Figura implements Dibujable, Comparable<Figura>
     public void rellenar()
     {
     }
-
-
-
 
     //Getters y Setters
 
@@ -110,4 +118,6 @@ public abstract class Figura implements Dibujable, Comparable<Figura>
     {
         this.origen = origen;
     }
+
+
 }

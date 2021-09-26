@@ -16,6 +16,8 @@ public class Circulo extends Figura
     {}
 
     //Metodos
+
+
     @Override
     public String toString()
     {
@@ -42,7 +44,7 @@ public class Circulo extends Figura
     @Override
     public void escalar(int porcentaje)
     {
-        return this.radio = ;
+        this.radio = (porcentaje/100)*this.radio;
     }
 
 }

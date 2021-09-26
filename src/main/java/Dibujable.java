@@ -11,4 +11,5 @@ public interface Dibujable
     static final String YELLOW = "\033[0;33m";  // Amarillo
     static final String BLACK = "\033[0;30m";   // Negro
     static final String WHITE = "\033[0;37m";   // Blanco
+    static final String RESET = "\033[0m";  // Reseteo de texto
 }

@@ -65,7 +65,8 @@ public class Triangulo extends Figura
     @Override
     public void escalar(int porcentaje)
     {
-        return ;
+        this.base = (porcentaje/100) * this.base;
+        this.altura = (porcentaje/100) * this.altura;
     }
 
 }

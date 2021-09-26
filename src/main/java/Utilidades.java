@@ -52,7 +52,7 @@ public static boolean isNoZero(int n)
 
 // LEER
 
-private final static BufferedReader entradaConsola = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+private final static BufferedReader entradaConsola = new BufferedReader(new java.io.InputStreamReader(System.in));
 
 public static String leerTexto(String mensaje)
 {

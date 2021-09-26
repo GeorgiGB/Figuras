@@ -73,7 +73,8 @@ public class Rectangulo extends Figura
     @Override
     public void escalar(int porcentaje)
     {
-
+        this.base = (porcentaje/100) * this.base;
+        this.altura = (porcentaje/100) * this.altura;
     }
 
 }
